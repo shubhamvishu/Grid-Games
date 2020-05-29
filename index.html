@@ -2,55 +2,16 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/menu.png">
         <title>Grid Games</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>       
     </head>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        #navwrapper{
-            padding-left: 20px;
-            min-height: 80px;
-            align-items: center;
-        }
-        .nav-wrapper,.nav-content{
-            background-color: #7D23E3;
-            margin: 0;
-            width: 100%;
-        }
-        .nav-content{
-           background-color:rgb(105, 12, 211);
-        }
-        .container{
-            width: 100vw;
-            min-width: 100%;
-            max-width: 100%;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .brand-logo{
-            font-weight: 700;
-            text-align: center;
-            margin: 10px 0;
-        }
-        #container-test1{
-            display: flex;
-            flex-direction: column;
-            height: 200px;
-            width: 50%;
-            margin: auto auto;
-            color: darkblue;
-            align-items: center;
-        }
-        .tab{
-            width: 300px;
-        }
+        
     </style>
     <body>
         <div class="container">
@@ -83,12 +44,28 @@
             <div id="test1" class="col s12">
                 <div id="container-test1">
                     <h3>Memory Game</h3>
-                    <p>
-                        This is a memory game where user need to choose the same image from a grid of hidden images in a two simultaneous chances.
-                    </p>
-                    <ul>
-                        <li>1.<a href="https://shubhamvishu.github.io/Grid-Games/Memory%20Game/">Memory Game</a></li>
-                    </ul>
+                    <div class="tab1-content">
+                        <section>
+                            <img src="images/undraw_new_ideas_jdea.svg" width="700" height="400">
+                        </section>
+                        <section>
+                            <div class="card darken-1" style="width: 80%;">
+                                <div class="card-content" style="height:auto;">
+                                    <p>
+                                        This is a memory game where user need to choose the same image from a grid of hidden images in a two simultaneous chances.
+                                        As the user selects 1st box or the rectangle the image behind it is revealed for the user till the user slects another selects another box or card fgrom the matrix of cards.
+                                        As the user selects another card that also gets revelaed and if both the cards represent the same item then both of them are removed from the grid and hence remarking a successfull 
+                                        attempt and also increasing the score of the user.Now the user is supposed to make use of the wrong attempt as those wrong attempots would ahve revealed the image behind the card in the nexrt move to guess the correct pair of images or cards in simulataneous move.The more quicker or sooner the user make all the 
+                                        guesses with also minimum number if guesses wins the ganme.
+                                    </p>
+                                </div>
+                                <div class="card-action blue-grey darken-1">
+                                    <a href="https://shubhamvishu.github.io/Grid-Games/Memory%20Game/">Link To Game</a>
+                                    <a href="https://shubhamvishu.github.io/Grid-Games/Memory%20Game/">Link To Repo</a>
+                                </div>                              
+                            </div>                   
+                        </section>
+                    </div>                               
                 </div>        
             </div>
             <div id="test2" class="col s12">Test 2</div>

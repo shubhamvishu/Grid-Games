@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navwrapper{
+    padding-left: 20px;
+    min-height: 80px;
+    align-items: center;
+}
+.nav-wrapper,.nav-content{
+    background-color: rgb(108, 99, 255);
+    margin: 0;
+    width: 100%;
+}
+.nav-content{
+   background-color:rgb(90, 83, 218); 
+}
+.container{
+    width: 100vw;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.brand-logo{
+    font-weight: 700;
+    text-align: center;
+    margin: 10px 0;
+}
+#container-test1{
+    flex-direction: column;
+    height: 200px;
+    width: 90%;
+    margin: auto auto;
+    text-align: left;
+    align-items: center;
+    color:#000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#container-test1 h3{
+    font-family:monospace;
+    font-weight:800;
+    color: #333;
+}
+#container-test1 img{
+    float: right;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.tab{
+    width: 300px;
+}
+.tab1-content{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.tab1-content img{
+    width: 500px;
+    height: 400px;
+}
+@media only screen and (max-width: 1000px) {
+
+    .tab1-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab1-content section{
+        display: flex;
+        align-items: center;
+        justify-content: center;             
+    }
+    .tab1-content img{
+        margin: 20px auto;
+        width: 70%;
+        height: 70%;
+    
+    }
+
+}
