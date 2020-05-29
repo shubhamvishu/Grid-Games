@@ -3,15 +3,106 @@
     <head>
         <meta charset="UTF-8">
         <title>Grid Games</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>       
     </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #navwrapper{
+            padding-left: 20px;
+            min-height: 80px;
+            align-items: center;
+        }
+        .nav-wrapper,.nav-content{
+            background-color: #7D23E3;
+            margin: 0;
+            width: 100%;
+        }
+        .nav-content{
+           background-color:rgb(105, 12, 211);
+        }
+        .container{
+            width: 100vw;
+            min-width: 100%;
+            max-width: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .brand-logo{
+            font-weight: 700;
+            text-align: center;
+            margin: 10px 0;
+        }
+        #container-test1{
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+            width: 50%;
+            margin: auto auto;
+            color: darkblue;
+            align-items: center;
+        }
+        .tab{
+            width: 300px;
+        }
+    </style>
     <body>
-        <h1>Grid Games</h1>
-        <ul>
-            <li>1.<a href="../Memory Game/index.html">Memory Game</a></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <div class="container">
+            <nav class="nav-extended">
+                <div id ="navwrapper" class="nav-wrapper">
+                  <a href="#" class="brand-logo">Grid Games</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Sources</a></li>
+                    <li><a href="#">Links</a></li>
+                  </ul>
+                </div>
+                <div class="nav-content">
+                  <ul class="tabs tabs-transparent">
+                    <li class="tab"><a class="active" href="#test1">Memory Game</a></li>
+                    <li class="tab"><a href="#test2">Test 2</a></li>
+                    <li class="tab"><a href="#test3">Test 3</a></li>
+                    <li class="tab"><a href="#test4">Test 4</a></li>
+                  </ul>
+                </div>
+            </nav>
+            
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sources</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+
+            <div id="test1" class="col s12">
+                <div id="container-test1">
+                    <h3>Memory Game</h3>
+                    <p>
+                        This is a memory game where user need to choose the same image from a grid of hidden images in a two simultaneous chances.
+                    </p>
+                    <ul>
+                        <li>1.<a href="../Memory Game/index.html">Memory Game</a></li>
+                    </ul>
+                </div>        
+            </div>
+            <div id="test2" class="col s12">Test 2</div>
+            <div id="test3" class="col s12">Test 3</div>
+            <div id="test4" class="col s12">Test 4</div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.tabs');
+                var elems2 = document.querySelectorAll('.sidenav');
+                var instances = M.Tabs.init(elems, {});
+                var instances2 = M.Sidenav.init(elems2, {});
+            });
+        </script>   
+       
     </body>
 </html>
