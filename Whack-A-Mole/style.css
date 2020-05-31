@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#page{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.square{
+    width: 16.25%;
+    padding-bottom: 16.25%;
+    margin: 0;
+    padding-bottom: 16%;
+    background-color: #fff;
+    border: 0.1px solid #aaa;
+}
+#grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    width: 45%;
+    background: transparent;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+#scoreboard{
+    display: flex;
+    flex-direction: column;
+    background-color: teal;
+    color: #fff;
+    text-align: center;;
+    width: 22%;
+    font-size: 20px;
+    padding: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 20px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+}
+.mole{
+    background-image: url('images/mole.png');
+    background-size:contain;
+}
+#scoreboard h1{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 968px) {
+
+    #page{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .square{
+        width: 16%;
+        padding-bottom: 16%;
+        margin: 0;
+        background-color: #fff;
+        border: 0.1px solid #aaa;
+    }
+    #grid{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        width: 80%;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    }
+    #scoreboard{
+        display: flex;
+        flex-direction: column;
+        background-color: teal;
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+        padding: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    }
+}
+@media screen and (max-width: 1180px) and (min-width:969px) {
+
+    .square{
+        width: 16.2%;
+        padding-bottom: 16.2%;
+        margin: 0;
+        background-color: #fff;
+        border: 0.1px solid #aaa;
+    }
+    #grid{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        width: 60%;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    }
+    #scoreboard{
+        display: flex;
+        flex-direction: column;
+        background-color: teal;
+        width: 20%;
+        padding: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    }
+}
