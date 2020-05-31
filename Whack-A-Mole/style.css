@@ -22,21 +22,35 @@
     align-content: center;
     margin: auto;
     width: 45%;
-    background: transparent;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: #fff;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.2);
+}
+#start-btn{
+    padding: 15px;
+    width: 90%;
+    margin: 0 auto;
+    border:none;
+    font-weight: bold;
+    border-radius: 30px;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    background-color: teal;
+    margin-top: 40px;
 }
 #scoreboard{
     display: flex;
     flex-direction: column;
-    background-color: teal;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     text-align: center;;
     width: 22%;
     font-size: 20px;
+    margin: 20px;
     padding: 15px;
     font-family: 'Courier New', Courier, monospace;
     border-radius: 20px;
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    box-shadow: -10px 20px 50px rgba(0, 0, 0, 0.4);
 }
 .mole{
     background-image: url('images/mole.png');
@@ -46,6 +60,7 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 700;
     margin-bottom: 30px;
+    margin-top: 15px;
 }
 @media screen and (max-width: 968px) {
 
@@ -72,7 +87,8 @@
     #scoreboard{
         display: flex;
         flex-direction: column;
-        background-color: teal;
+        background-color: #fff;
+        color: #000;
         width: 80%;
         margin: auto;
         margin-top: 50px;
@@ -102,7 +118,8 @@
     #scoreboard{
         display: flex;
         flex-direction: column;
-        background-color: teal;
+        background-color: #fff;
+        color: #000;
         width: 20%;
         padding: 20px;
         font-family: 'Courier New', Courier, monospace;

@@ -2,6 +2,7 @@ let square = document.querySelectorAll('.square');
 const mole = document.querySelectorAll('.mole');
 const timeLeft = document.querySelector('#time-left');
 const grid = document.querySelector('#grid');
+const startgame = document.querySelector("#start-btn");
 let score = document.querySelector('#score');
 
 let result = 0;
@@ -9,6 +10,7 @@ let currentTime = timeLeft.textContent;
 var hit;
 let alreadyHit = false;
 let moleMovement;
+let timer;
 
 for(let i = 0; i < 36; ++i){
     let newEle = document.createElement("div");
@@ -39,12 +41,22 @@ function randomSquare() {
         }
     });
  });
- function moveMole() {
-     moleMovement = setInterval(randomSquare,1000);
- }
- moveMole();
+function moveMole() {
+    clearInterval(timer);
+    clearInterval(moleMovement);
+    moleMovement = setInterval(randomSquare,1000);
+    timer = setInterval(reduceTimer,1000);
+}
+startgame.addEventListener('click',() => {
+    timeLeft.textContent = 60;
+    currentTime = timeLeft.textContent;
+    result = 0;
+    score.textContent = result;
+    moveMole();
+});
 function reduceTimer() {
-    --currentTime;
+    if(currentTime > 0)
+        --currentTime;
     timeLeft.textContent = currentTime;
     if(currentTime === 0){
         clearInterval(timer);
@@ -52,4 +64,3 @@ function reduceTimer() {
         alreadyHit = true;
     }
 }
-let timer = setInterval(reduceTimer,1000);
